@@ -1,0 +1,41 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "storybook": "storybook dev --port 6006",
+    "build-storybook": "storybook build",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/storybook": "^8.3.2",
+    "autoprefixer": "^10.4.20",
+    "element-plus": "^2.9.0",
+    "nuxt": "^3.13.0",
+    "postcss": "^8.4.49",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@storybook/addon-designs": "^8.0.4",
+    "@storybook/addon-essentials": "^8.4.6",
+    "@storybook/addon-interactions": "^8.4.6",
+    "@storybook/addon-links": "^8.4.6",
+    "@storybook/addon-styling-webpack": "^1.0.1",
+    "@storybook/addon-viewport": "^8.4.6",
+    "@storybook/addons": "^7.6.17",
+    "@storybook/builder-vite": "^8.4.6",
+    "@storybook/vue3": "^8.4.6",
+    "storybook": "^8.3.5",
+    "tailwindcss": "^3.4.16",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
