@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/vue3';
-import { h } from 'vue';
+import type { Meta, StoryFn } from '@storybook/vue3';
 import ProductDetail from '@/components/molecules/ProductDetails.vue';
 
+// Meta configuration
 const meta: Meta<typeof ProductDetail> = {
   title: 'Molecules/ProductDetail',
   component: ProductDetail,
@@ -9,15 +9,14 @@ const meta: Meta<typeof ProductDetail> = {
   parameters: {
     docs: {
       description: {
-        story: 'The ProductDetail component displays detailed information about a specific product.',
+        component:
+          'The ProductDetail component displays detailed information about a specific product, including its title, description, price, and rating.',
       },
     },
   },
 };
 
 export default meta;
-
-type Story = StoryObj<typeof ProductDetail>;
 
 // Mock product data
 const mockProduct = {
@@ -34,18 +33,11 @@ const mockProduct = {
   },
 };
 
-// Default ProductDetail story
-export const Default: Story = {
-  render: (args) => ({
-    components: { ProductDetail },
-    setup() {
-      return { args };
-    },
-    render() {
-      return h(ProductDetail, {
-        product: mockProduct, // Pass mock data as the product prop
-      });
-    },
-  }),
-  args: {},
-};
+// Default story for ProductDetail
+export const Default: StoryFn<typeof ProductDetail> = (args) => ({
+  components: { ProductDetail },
+  setup() {
+    return { args, mockProduct };
+  },
+  template: '<ProductDetail :product="mockProduct" />',
+});
