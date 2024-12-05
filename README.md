@@ -91,12 +91,6 @@ This project uses **Atomic Design** for structuring components:
 - **Molecules**: Combinations of atoms that perform a specific function (e.g., `ProductCard.vue`).
 - **Organisms**: Larger UI sections formed by molecules and atoms (e.g., `ProductList.vue`).
 
-**Example**:  
-The `ProductCard.vue` molecule:
-```vue
-
-```
-
 
 ## UI Design
 
