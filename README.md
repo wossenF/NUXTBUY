@@ -1,78 +1,126 @@
-# Nuxt 3 Minimal Starter
+# Product View Page Built with NuxtJS
 
-![image alt](https://github.com/BirhanuAsmamaw/NUXTBUY/blob/5793fd09e28da1106731061bc9b8cad4059798c4/NuxtBuy.png)
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
+## Table of Contents
+1. [Overview](#overview)
+2. [Folder Structure](#folder-structure)
+3. [Getting Started](#getting-started)
+4. [Features](#features)
+5. [Component Architecture](#component-architecture)
+6. [UI Design](#ui-design)
+7. [Usage in Application](#usage-in-application)
+8. [Video Presentation](#video-presentation)
 
 
-# bun
-bun install
+---
+
+## Overview
+
+This project is a **Product View Page** built with:
+- **NuxtJS** for server-side rendering and dynamic routing.
+- **Tailwind CSS** for responsive styling.
+- **Element Plus** for prebuilt, customizable UI components.
+- **Storybook** for component documentation and development.
+- **Atomic Design** to create a modular and scalable component architecture.
+
+The application features a dynamic product listing with interactive filters, detailed product view, and responsive layouts.
+
+---
+
+## Folder Structure
+
+```plaintext
+.
+├── assets/            # Static files like images and icons
+├── components/        # Vue components following atomic design
+│   ├── atoms/         # Small, reusable elements (e.g., Button, Input)
+│   ├── molecules/     # Groups of atoms (e.g., ProductCard)
+│   └── organisms/     # Complex, multi-functional components (e.g., ProductList)
+├── pages/             # Nuxt pages for routing (e.g., Product page)
+├── layouts/           # Shared layouts (e.g., Header, Footer)
+├── stories            # story component following atomic design
+└── App.vue            # Main application entry point
 ```
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+## Getting Started
 
-```bash
-# npm
-npm run dev
+### Prerequisites
+- **Node.js** v16+ and **npm** v8+
+- **Git** installed locally
 
-# pnpm
-pnpm run dev
+### Installation
 
-# yarn
-yarn dev
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <project-directory>
+   ```
 
-# bun
-bun run dev
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Run Storybook:
+   ```bash
+   npm run storybook
+   ```
+
+---
+
+## Features
+
+- **Product Listing**: Displays a list of products.
+- **Product Details**: Each product has a dedicated details page with images, descriptions.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Reusability**: Components are built using atomic design principles for modularity.
+
+---
+
+## Component Architecture
+
+This project uses **Atomic Design** for structuring components:
+
+- **Atoms**: Basic UI elements (e.g., `Button.vue`, `Text.vue`).
+- **Molecules**: Combinations of atoms that perform a specific function (e.g., `ProductCard.vue`).
+- **Organisms**: Larger UI sections formed by molecules and atoms (e.g., `ProductList.vue`).
+
+**Example**:  
+The `ProductCard.vue` molecule:
+```vue
+
 ```
 
-## Production
+---
 
-Build the application for production:
+## UI Design
 
-```bash
-# npm
-npm run build
+- **Tailwind CSS**: For responsive, utility-first styling.
+- **Element Plus**: To leverage prebuilt components like dropdowns, sliders, and modals.
 
-# pnpm
-pnpm run build
+---
 
-# yarn
-yarn build
+---
 
-# bun
-bun run build
+## Usage in Application
+
+Components are reusable and can be integrated seamlessly into pages.
+
+**Example**: Using the `ProductList.vue` organism in a page:
+```vue
+
 ```
 
-Locally preview production build:
+---
 
-```bash
-# npm
-npm run preview
+## Video Presentation
 
-# pnpm
-pnpm run preview
+🎥 Watch the video walkthrough of the project: [Video Link](#)
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
