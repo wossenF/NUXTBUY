@@ -14,6 +14,10 @@ const meta: Meta<typeof ProductList> = {
         story: 'The ProductList component displays a grid of product cards.',
       },
     },
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/vozbZ65w0orSzAZ70ito0y/Untitled?node-id=14-111&node-type=symbol&t=kEcITIAfu4dvQhEo-0',
+  },
   },
 };
 

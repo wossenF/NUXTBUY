@@ -12,6 +12,10 @@ const meta: Meta<typeof ProductCard> = {
         story: 'A single product card displaying the product image, title, price, and a "View Details" button.',
       },
     },
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/vozbZ65w0orSzAZ70ito0y/Untitled?node-id=14-54&node-type=symbol&t=kEcITIAfu4dvQhEo-0',
+  },
   },
 };
 
