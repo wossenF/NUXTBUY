@@ -53,8 +53,8 @@ The application features a dynamic product listing with interactive filters, det
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/wossenF/NUXTBUY.git
+   cd NUXTBUY
    ```
 
 2. Install dependencies:
@@ -97,7 +97,6 @@ The `ProductCard.vue` molecule:
 
 ```
 
----
 
 ## UI Design
 
@@ -106,16 +105,14 @@ The `ProductCard.vue` molecule:
 
 ---
 
----
+
 
 ## Usage in Application
 
 Components are reusable and can be integrated seamlessly into pages.
 
-**Example**: Using the `ProductList.vue` organism in a page:
-```vue
 
-```
+
 
 ---
 
@@ -123,4 +120,3 @@ Components are reusable and can be integrated seamlessly into pages.
 
 🎥 Watch the video walkthrough of the project: [Video Link](#)
 
----
