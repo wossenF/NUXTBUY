@@ -112,5 +112,5 @@ Components are reusable and can be integrated seamlessly into pages.
 
 ## Video Presentation
 
-🎥 Watch the video walkthrough of the project: [Video Link](#)
+🎥 Watch the video walkthrough of the project: [https://www.loom.com/share/65da7a942d85410a9aa8efc9f6a9e9cd?sid=222f6794-1fe6-497a-8f97-058b699b2b45](#)
 
